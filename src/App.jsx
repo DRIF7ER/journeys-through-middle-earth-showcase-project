@@ -4,13 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import { Home } from './components/Home/Home.jsx';
+import { NavGuide } from './components/NavGuide/NavGuide.jsx';
+import { NavGuideItem } from './components/NavGuideItem/NavGuideItem.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
+      {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -29,7 +31,8 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
+      </p> */}
+      {/* <NavGuide props={ <NavGuideItem icon='../../assets/Icons/Narsil.svg' /> } /> */}
       <Home />
     </>
   )
