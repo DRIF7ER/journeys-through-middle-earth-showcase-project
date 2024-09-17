@@ -4,8 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import { Home } from './components/Home/Home.jsx';
-import { NavGuide } from './components/NavGuide/NavGuide.jsx';
-import { NavGuideItem } from './components/NavGuideItem/NavGuideItem.jsx';
+import { NavBar } from './components/NavBar/NavBar.jsx';
+import { NavBarItem } from './components/NavBarItem/NavBarItem.jsx';
 
 function App() {
   const [count, setCount] = useState(0)

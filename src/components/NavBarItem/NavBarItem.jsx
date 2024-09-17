@@ -1,17 +1,16 @@
 import React, { useState } from 'react'
 
-export function NavGuideItem (props) {
+export function NavBarItem (props) {
   const [open, setOpen] = useState(false);
 
   return(
-    <li className='nav-list-item' id='nav-list-item-id'>
+    <li className='nav-bar-item' id='nav-bar-item-id'>
       <a href='#' className='icon-button' onClick={ () => setOpen(!open) }>
         <img className='link-img' src={props.icon} />
-        {/* { props.icon } */}
       </a>
       { open && props.children }
     </li>
   )
 }
 
-export default NavGuideItem;
+export default NavBarItem;
