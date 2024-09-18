@@ -9,5 +9,8 @@
 }
 
 #map-layer {
+  position: relative;
+  z-index: 1;
   background-image: url(../../assets/Maps/MIDDLE_EARTH_BORDER_FINAL_PNG.png);
+  background-repeat: no-repeat;
 }

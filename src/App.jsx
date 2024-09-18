@@ -1,39 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
 
 import { Home } from './components/Home/Home.jsx';
 import { NavBar } from './components/NavBar/NavBar.jsx';
+import { DropdownMenu, DropdownItem } from './components/DropdownMenu/DropdownMenu.jsx';
 import { NavBarItem } from './components/NavBarItem/NavBarItem.jsx';
+import { Paths } from './components/Paths/Paths.jsx';
+import Path from './assets/Icons/Path.svg';
+import Narsil from './assets/Icons/Narsil.svg';
+import homeIcon from './assets/Icons/Better Hobbit Hole.svg';
+import Aragorn from './assets/CharacterPaths/Aragorn Path.svg';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      {/* <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
-      {/* <NavGuide props={ <NavGuideItem icon='../../assets/Icons/Narsil.svg' /> } /> */}
+      <NavBar>
+        <Link to='/' className='home-link'><NavBarItem icon={homeIcon} /></Link>
+        <NavBarItem icon={ Path }>
+          <DropdownMenu>
+            <Link to='/paths/Aragorn'><DropdownItem leftIcon={ Narsil } id={ 'Aragorn' }/></Link>
+            {/* <DropdownItem leftIcon={ Narsil } id={ 'Aragorn' }/> */}
+          </DropdownMenu>
+        </NavBarItem>
+      </NavBar>
       <Home />
+      <Routes>
+        {/* <Route path='/' element={ <Home /> } /> */}
+        <Route path='/paths/:id' element={ <Paths id={ Aragorn } character='Aragorn'>{ Aragorn }</Paths> } />
+      </Routes>
     </>
   )
 }

@@ -14,12 +14,6 @@ export function Home() {
   return(
     <div className="home-outer-container">
       <div id="map-layer">
-        <NavBar>
-          <NavBarItem icon={ Path }>
-            <DropdownMenu />
-          </NavBarItem>
-        </NavBar>
-        This will be something from the Home component...
       </div>
     </div>
   )
