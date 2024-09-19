@@ -9,8 +9,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  width: 4961px;
-  height: 3508px;
+  width: 100vw;
 }
 
 /* 

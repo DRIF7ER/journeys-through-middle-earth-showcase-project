@@ -1,9 +1,11 @@
+import './DropdownMenu.css'
 import React, { useState } from "react";
 import NavGuideItem from "../NavBarItem/NavBarItem";
 import Narsil from '../../assets/Icons/Narsil.svg';
 import Path from '../../assets/Icons/Path.svg';
 
 export function DropdownItem (props) {
+
   return (
     <div className='menu-item'>
       <img className='dropdown-icon-img' src={ props.leftIcon } />
@@ -13,10 +15,9 @@ export function DropdownItem (props) {
 };
 
 export function DropdownMenu (props) {
-  // const [open, setOpen] = useState(false)
 
   return(
-    <div className='dropdown-menu' >
+    <div className='dropdown-menu'>
       { props.children }
     </div>
   );

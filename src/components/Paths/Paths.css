@@ -8,8 +8,35 @@ a {
 .Aragorn {
   position: absolute;
   z-index: 2;
-  top: 5.5%;
-  right: 0%;
-  width: 100%;
-  height: 100%;
+  /* top: 65.3%;
+  left: 81.2%; */
+  /* bottom: 83.5%;
+  left: .75%; */
+  width: 100vw;
+  height: auto;
+  /* stroke-dasharray: 14942.033203125;
+  stroke-dashoffset: 14942.033203125; */
+  /* animation: 3s fadeSlideIn linear; */
+}
+
+.Aragorn-path {
+  /* stroke-dasharray: 14942.033203125;
+  stroke-dashoffset: 14942.033203125; */
+  animation: 500ms fadeSlideIn linear;
+  width: 100vw;
+  height: auto;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    /* stroke-dashoffset: 14942.033203125; */
+    transform: translate(0%, 3%);
+    opacity: 0;
+  }
+
+  100% {
+    /* stroke-dashoffset: 0; */
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
 }

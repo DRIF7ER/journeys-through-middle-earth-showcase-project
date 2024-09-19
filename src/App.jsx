@@ -1,5 +1,7 @@
+import React from 'react';
 import { useState } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
+import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
@@ -9,13 +11,16 @@ import { NavBar } from './components/NavBar/NavBar.jsx';
 import { DropdownMenu, DropdownItem } from './components/DropdownMenu/DropdownMenu.jsx';
 import { NavBarItem } from './components/NavBarItem/NavBarItem.jsx';
 import { Paths } from './components/Paths/Paths.jsx';
+import { MapWithControls } from './components/MapWithControls/MapWithControls.jsx';
+// import { middleEarthMap } from './assets/Maps/middle_earth_map.png';
+import IMAGES from './assets/Images.jsx';
 import Path from './assets/Icons/Path.svg';
 import Narsil from './assets/Icons/Narsil.svg';
 import homeIcon from './assets/Icons/Better Hobbit Hole.svg';
-import Aragorn from './assets/CharacterPaths/Aragorn Path.svg';
+import Aragorn from './assets/CharacterPaths/Aragorn/Aragorn Path.svg';
+import AragornPath from './assets/CharacterPaths/Aragorn/AragornPathComp.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -24,15 +29,10 @@ function App() {
         <NavBarItem icon={ Path }>
           <DropdownMenu>
             <Link to='/paths/Aragorn'><DropdownItem leftIcon={ Narsil } id={ 'Aragorn' }/></Link>
-            {/* <DropdownItem leftIcon={ Narsil } id={ 'Aragorn' }/> */}
           </DropdownMenu>
         </NavBarItem>
       </NavBar>
-      <Home />
-      <Routes>
-        {/* <Route path='/' element={ <Home /> } /> */}
-        <Route path='/paths/:id' element={ <Paths id={ Aragorn } character='Aragorn'>{ Aragorn }</Paths> } />
-      </Routes>
+      <MapWithControls />
     </>
   )
 }

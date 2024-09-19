@@ -1,4 +1,5 @@
 import React from 'react';
+import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import ReactComponent from 'react';
 import './Home.css';
 import { fetchCharacters } from '../ApiCalls/ApiCalls';
@@ -13,8 +14,7 @@ export function Home() {
 
   return(
     <div className="home-outer-container">
-      <div id="map-layer">
-      </div>
+      <div id="map-layer"></div>
     </div>
   )
 };
