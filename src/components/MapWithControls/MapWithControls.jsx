@@ -17,7 +17,7 @@ export function MapWithControls() {
           <React.Fragment>
             <TransformComponent>
               <Routes>
-                <Route path='/paths/:id' element={<Paths id={ aragornData.characterId } character={ aragornData.name } characterDeeds={ aragornData.deeds } >{<AragornPath />}</Paths>} />
+                <Route path='/paths/:id/*' element={<Paths id={ aragornData.characterId } character={ aragornData.name } characterDeeds={ aragornData.deeds } >{<AragornPath />}</Paths>} />
               </Routes>
               <div className='map-wrap'>
                 <img src={IMAGES.middleEarthMap} className='middle-earth-map' />

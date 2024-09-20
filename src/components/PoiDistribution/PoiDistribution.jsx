@@ -34,21 +34,37 @@ export function PoiDistribution ({ characterName, characterId, characterQuotes, 
       <div className='poi-links-wrap'>
         { currentCharacter.deeds.map((entry) => {
           return (
-            <div className={`poi-and-link-container ${ entry.place }-poi-container`}>
-              <img src={ IMAGES.Earendil } className={ `poi-image ${ entry.place }-image` } key={ entry.place }/>
-              <Link to={ `/Aragorn/${ entry.place }` } className={ `${entry.place}-image-link link-image` } />
+            <div className={`poi-and-link-container ${ entry.place }-poi-container`} onClick={ () => {
+              console.log('click worked.')
+              let poiBox = document.querySelector(`.${entry.place}`);
+              if (poiBox.classList.contains('poi-hidden')) {
+                poiBox.classList.remove('poi-hidden')
+              } else {
+                poiBox.classList.add('poi-hidden')
+              }
+            } 
+          } >
+              <img src={ IMAGES.Earendil } className={ `poi-image ${ entry.place }-image` } key={ `marker-for-${entry.place}` } />
+              {/* <Link to={ `/Aragorn/${ entry.place }` } className={ `${entry.place}-image-link link-image` } /> */}
+              <PoiSingleDisplay place={ entry.place } key={ `Aragorn-in-${entry.place}` } deeds={ entry.deed } poiImage={ entry.images } />
             </div>
           )
         }) }
-        <Routes>
+        {/* <Routes>
           { currentCharacter.deeds.map((entry) => {
             return (
               <React.Fragment>
-                <Route path={`/Aragorn/${ entry.place }`} element={<Paths id={ entry.place }>{ <PoiSingleDisplay place={ entry.place } deeds={ entry.deeds } poiImage={ IMAGES.Earendil } /> }</Paths>} />
+                <Route path={`/Aragorn/${ entry.place }`} element={<Paths id={ entry.place }>{ <PoiSingleDisplay place={ entry.place } deeds={ entry.deeds } poiImage={ IMAGES.Strider } /> }</Paths>} />
+                <Route path={`/Aragorn/${ entry.place }`} element={ <PoiSingleDisplay place={ entry.place } deeds={ entry.deeds } poiImage={ IMAGES.Strider } /> } />
               </React.Fragment>
             )
           }) }
-        </Routes>
+        </Routes> */}
+          {/* { currentCharacter.deeds.map((entry) => {
+            return (
+              <PoiSingleDisplay place={ entry.place } deeds={ entry.deeds } poiImage={ IMAGES.Strider } />
+            )
+          }) } */}
       </div>      
     </div>
   );

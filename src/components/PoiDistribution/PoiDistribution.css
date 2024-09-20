@@ -9,6 +9,7 @@
   z-index: 3;
   width: 100vw;
   height: auto;
+  animation: 500ms fadeSlideIn linear;
 }
 
 .poi-links-wrap {
@@ -23,7 +24,7 @@
   z-index: 3;
   top: 0;
   width: .5vw;
-  height: auto;
+  height: 1vw;
 }
 
 .poi-and-link-container {
@@ -38,7 +39,7 @@
   transition: transform 300ms;
 }
 
-.poi-links-wrap :hover {
+.poi-links-wrap > .poi-image:hover {
   transform: scale(2) !important;
 }
 
@@ -59,7 +60,7 @@
 
 .Bree-poi-container {
   top: 18.65vw;
-  right: 16.3vw;
+  right: 15.8vw;
 }
 
 
@@ -74,7 +75,7 @@
 
 .Weathertop-poi-container {
   top: 16.2vw;
-  right: 10.4vw;
+  right: 10vw;
 }
 
 /* .Weathertop-image-link {
@@ -92,6 +93,19 @@
   left: 0vw;
 } */
 
+@keyframes fadeSlideIn {
+  0% {
+    /* stroke-dashoffset: 14942.033203125; */
+    transform: translate(0%, 3%);
+    opacity: 0;
+  }
+
+  100% {
+    /* stroke-dashoffset: 0; */
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
 
 
 
