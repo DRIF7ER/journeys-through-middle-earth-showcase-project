@@ -1,15 +1,16 @@
 import './DropdownMenu.css'
 import React, { useState } from "react";
-import NavGuideItem from "../NavBarItem/NavBarItem";
+import NavGuideItem from "../NavBarItem/NavBarItem.jsx";
 import Narsil from '../../assets/Icons/Narsil.svg';
 import Path from '../../assets/Icons/Path.svg';
 
 export function DropdownItem (props) {
+  console.log(props.characterId, props.name, '<-- FROM DROPDOWN ITEM')
 
   return (
     <div className='menu-item'>
       <img className='dropdown-icon-img' src={ props.leftIcon } />
-      <span className='icon-button-name'>{ props.id }</span>
+      <span className='icon-button-name' >{ props.name }</span>
     </div>
   );
 };
@@ -23,4 +24,7 @@ export function DropdownMenu (props) {
   );
 };
 
-export default DropdownMenu;
+export default {
+  DropdownMenu,
+  DropdownItem,
+};

@@ -2,7 +2,7 @@ import React from 'react';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import ReactComponent from 'react';
 import './Home.css';
-import { fetchCharacters } from '../ApiCalls/ApiCalls';
+// import { fetchCharacters } from '../ApiCalls/ApiCalls';
 import { NavBar } from '../NavBar/NavBar.jsx';
 import { NavBarItem } from '../NavBarItem/NavBarItem.jsx';
 import { DropdownMenu } from '../DropdownMenu/DropdownMenu.jsx'
