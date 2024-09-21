@@ -1,0 +1,116 @@
+/*
+*^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|*
+*<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<  GLOBALS  p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>*
+*v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|*
+*/
+
+.poi-distribution-container {
+  position: absolute;
+  z-index: 3;
+  width: 100vw;
+  height: auto;
+  animation: 500ms fadeSlideIn linear;
+}
+
+.poi-links-wrap {
+  position: absolute;
+  z-index: 3;
+  width: 100vw;
+  height: auto;
+}
+
+.link-image {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  width: .5vw;
+  height: 1vw;
+}
+
+.poi-and-link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 3;
+  width: 1vw;
+  height: 1vw;
+  cursor: pointer;
+  transition: transform 300ms;
+}
+
+.poi-and-link-container > img:hover {
+  transform: scale(2) !important;
+}
+
+.poi-image {
+  position: absolute;
+  z-index: 3 !important;
+  width: .5vw;
+  cursor: pointer;
+  transition: width 300ms;
+}
+
+
+/*
+*^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|*
+*<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q< INDIVIDUAL POINTS p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>*
+*v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|*
+*/
+
+.Bree-poi-container {
+  top: 18.65vw;
+  right: 15.8vw;
+}
+
+
+/* .Bree-image-link {
+  top: 18.60vw;
+  right: 0vw;
+} */
+
+/* .Bree-image {
+  left: 0vw;
+} */
+
+.Weathertop-poi-container {
+  top: 16.2vw;
+  right: 10vw;
+}
+
+/* .Weathertop-image-link {
+  top: 16.20vw;
+  left: 0vw;
+} */
+
+.Rivendell-poi-container {
+  top: 19.4vw;
+  left: 97.3vw;
+}
+
+/* .Rivendell-image-link {
+  top: 19.4vw;
+  left: 0vw;
+} */
+
+@keyframes fadeSlideIn {
+  0% {
+    /* stroke-dashoffset: 14942.033203125; */
+    transform: translate(0%, 3%);
+    opacity: 0;
+  }
+
+  100% {
+    /* stroke-dashoffset: 0; */
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+
+
+
+/*
+*^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|^|*
+*<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q<q< NAME ME p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>p>*
+*v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|v|*
+*/

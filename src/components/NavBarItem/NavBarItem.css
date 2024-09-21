@@ -1,0 +1,36 @@
+.nav-bar-item, .home-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5vw;
+}
+
+.icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
+  background-color: #7D5730;
+  transition: filter 300ms;
+  transition: transform 300ms;
+}
+
+.icon-button:hover {
+  filter: brightness(1.2);
+  transform: scale(1.5);
+}
+
+.link-img {
+  width: 80%;
+}
+
+.home-link {
+  width: 5vw;
+  height: 99%;
+}
+
+a {
+  text-decoration: none;
+}

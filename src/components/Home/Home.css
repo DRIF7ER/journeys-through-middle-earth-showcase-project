@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.home-outer-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+}
+
+.home-inner-container {
+  width: 100vw;
+  height: 100vw;
+}
+
+.please-select {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 1vw;
+  left: 6vw;
+  width: 25vw;
+  height: 2.5vw;
+  border: 10px solid #465e3e;
+  background-color: #7d5730;
+  border-radius: 10px;
+  font-size: 125%;
+  color: #73984b;
+  animation: 500ms fadeSlideIn linear;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
