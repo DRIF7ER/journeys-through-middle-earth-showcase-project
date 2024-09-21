@@ -8,8 +8,8 @@ a {
 .Aragorn {
   position: absolute;
   z-index: 2;
-  top: 0;
-  right:50vw;
+  top: 0vw;
+  right: 50vw;
   /* bottom: 83.5%;
   left: .75%; */
   width: 100vw;
@@ -20,7 +20,7 @@ a {
 }
 
 .svg-path-wrap {
-  
+  width: 100%;
 }
 
 .Aragorn-path {

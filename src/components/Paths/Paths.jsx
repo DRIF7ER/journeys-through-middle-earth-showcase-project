@@ -1,22 +1,27 @@
 import './paths.css';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import PoiDistribution from '../PoiDistribution/PoiDistribution.jsx';
-import aragornData from '../../assets/CharacterPaths/CharacterDataForAPI.jsx';
+import AragornPath from '../../assets/CharacterPaths/Aragorn/AragornPathComp.jsx';
+import aragornData from '../../assets/CharacterPaths/CharacterData.jsx';
 import Aragorn from '../../assets/CharacterPaths/Aragorn/Aragorn Path.svg';
 
 export function Paths(props) {
+  // console.log(useParams(), '<-- USEPARAMS')
 
-  const { character, id, characterDeeds } = props;
+  const { character, id, characterDeeds, quoteIds } = props;
 
-  console.log(characterDeeds, '<-- FROM PATHS')
+  // let { name } = useParams();
+
+  // console.log(data, '<-- FROM PATHS')
 
   return (
-    <div className={props.character}>
-      <PoiDistribution characterName={ character } characterId={ id } characterDeeds={ characterDeeds } />
+    <div className={character}>
       <div className='svg-path-wrap'>
+        <PoiDistribution characterName={ character } characterId={ id } characterDeeds={ characterDeeds } quoteIds={ quoteIds } />
         {props.children}
       </div>
+        {/* <ChooseCharacterPath > { name } </ChooseCharacterPath> */}
     </div>
   );
 };

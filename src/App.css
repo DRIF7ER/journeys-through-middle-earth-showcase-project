@@ -15,3 +15,63 @@
   height: auto;
 } */
 
+.map-controls {
+  position: fixed;
+  z-index: 3;
+  bottom: 5%;
+  left: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 3vw;
+  height: 8vw;
+  background-color: #465E3E;
+  border-radius: 20px;
+}
+
+.zoom-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 25%;
+  border-radius: 15px 15px 2px 2px;
+  border: 0;
+  background-color: #73984b;
+  font-size: 200%;
+  color: #7d5730;
+}
+
+.reset-zoom {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 25%;
+  border-radius: 5px;
+  border: 0;
+  background-color: #73984b;
+  font-size: 200%;
+  color: #7d5730;
+}
+
+.zoom-out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 25%;
+  border-radius: 2px 2px 15px 15px;
+  border: 0;
+  background-color: #73984b;
+  font-size: 200%;
+  color: #7d5730;
+}
+
+.map-wrap {
+  width: 100vw;
+}
+
+.middle-earth-map {
+  width: 100vw;
+}

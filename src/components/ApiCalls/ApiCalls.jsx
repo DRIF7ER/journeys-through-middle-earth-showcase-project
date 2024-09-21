@@ -63,8 +63,8 @@ export async function fetchCharacterQuotes(anId) {
   });
   let quotesFetched = await fetchQuotes.json()
   // let quoteData = (await quotesFetched).then((data) => data)
-  console.log(await quotesFetched, '<-- FROM FETCH QUOTES')
-  return quotesFetched
+  console.log(quotesFetched.docs, '<-- FROM FETCH QUOTES')
+  return quotesFetched.docs
 };
 
 export default {

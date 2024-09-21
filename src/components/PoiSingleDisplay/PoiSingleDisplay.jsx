@@ -3,24 +3,34 @@ import './PoiSingleDisplay.css'
 
 export function PoiSingleDisplay(props) {
 
-  const { place, deeds, poiImage } = props;
+  const { place, deeds, poiImage, poiQuotes } = props;
 
-  console.log(deeds[0][0], '<-- FROM SINGLE POI')
+  console.log(poiQuotes, '<-- FROM SINGLE POI')
 
   return (
     <div className={ `single-poi-container ${ place } poi-hidden` }>
       <div className='single-poi-inner-wrap'>
         <div className='description-and-img-wrap'>
           <div className='quote-and-snippet'>
-            <p>{ 'This will be where the quotes from the API will go.' }</p>
+            <p className='character-quote'>{ `" ${ poiQuotes } "` }</p>
             <div className='deed-display'>
               <p>{ deeds[0] }</p>
               <p>{ deeds[1] }</p>
               <p>{ deeds[2] }</p>
             </div>
           </div>
-          <div className='poi-img-wrap'>
-            <img src={ poiImage } />
+          <div className='poi-img-wrap-outer'>
+            <div className='poi-img-wrap-inner'>
+              <div className='image-wrap image-1'>
+                <img src={ poiImage[0] } />
+              </div>
+              <div className='image-wrap image-2'>
+                <img src={ poiImage[1] } />
+              </div>
+              <div className='image-wrap image-3'>
+                <img src={ poiImage[2] } />
+              </div>
+            </div>
           </div>
         </div>
         {/* <div className='single-display-controls'>

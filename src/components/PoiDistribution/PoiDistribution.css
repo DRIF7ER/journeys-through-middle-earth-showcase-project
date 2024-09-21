@@ -39,7 +39,7 @@
   transition: transform 300ms;
 }
 
-.poi-links-wrap > .poi-image:hover {
+.poi-and-link-container > img:hover {
   transform: scale(2) !important;
 }
 
