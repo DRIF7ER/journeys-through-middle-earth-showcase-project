@@ -8,15 +8,15 @@ export function PoiSingleDisplay(props) {
   console.log(poiQuotes, '<-- FROM SINGLE POI')
 
   return (
-    <div className={ `single-poi-container ${ place } poi-hidden` }>
+    <div className={ `single-poi-container ${ place }-single-poi-container poi-hidden` }>
       <div className='single-poi-inner-wrap'>
         <div className='description-and-img-wrap'>
           <div className='quote-and-snippet'>
             <p className='character-quote'>{ `" ${ poiQuotes } "` }</p>
             <div className='deed-display'>
-              <p>{ deeds[0] }</p>
-              <p>{ deeds[1] }</p>
-              <p>{ deeds[2] }</p>
+              <p className='p-1'>{ deeds[0] }</p>
+              <p className='p-2'>{ deeds[1] }</p>
+              <p className='p-3'>{ deeds[2] }</p>
             </div>
           </div>
           <div className='poi-img-wrap-outer'>

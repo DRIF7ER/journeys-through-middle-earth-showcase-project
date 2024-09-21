@@ -9,11 +9,11 @@ a {
   position: absolute;
   z-index: 2;
   top: 0vw;
-  right: 50vw;
+  right: 0vw;
   /* bottom: 83.5%;
   left: .75%; */
   width: 100vw;
-  height: auto;
+  height: 50vw;
   /* stroke-dasharray: 14942.033203125;
   stroke-dashoffset: 14942.033203125; */
   /* animation: 3s fadeSlideIn linear; */
@@ -26,6 +26,7 @@ a {
 .Aragorn-path {
   position: absolute;
   z-index: 2;
+  right: 0vw;
   /* stroke-dasharray: 14942.033203125;
   stroke-dashoffset: 14942.033203125; */
   animation: 500ms fadeSlideIn linear;

@@ -8,7 +8,7 @@ import { fetchCharacter, fetchCharacterQuotes } from '../ApiCalls/ApiCalls.jsx';
 
 export function PoiDistribution({ characterName, characterId, characterDeeds, quoteIds }) {
 
-  // console.log(characterName, characterId, characterDeeds, '<-- PROPS IN POI DIST')
+  console.log(characterName, characterId, characterDeeds, '<-- PROPS IN POI DIST')
 
   let currentCharacter = {
     name: characterName,
@@ -20,7 +20,9 @@ export function PoiDistribution({ characterName, characterId, characterDeeds, qu
   useEffect(() => {
 
     async function getQuotes() {
-      // let quotesToFilter = await fetchCharacterQuotes(currentCharacter.id)
+      let quotesToFilter = await fetchCharacterQuotes(currentCharacter.id)
+
+      console.log(quotesToFilter)
 
       currentCharacter.deeds.map((deed) => {
         quotesToFilter.map((apiQuote) => {
@@ -32,7 +34,7 @@ export function PoiDistribution({ characterName, characterId, characterDeeds, qu
       });
     }
 
-    // getQuotes()
+    getQuotes()
 
     // let quotesToFilter = fetchCharacterQuotes(currentCharacter.id).then((data) => data);
     // console.log(quotesToFilter, '<-- IN QUOTE FETCH')
@@ -48,6 +50,9 @@ export function PoiDistribution({ characterName, characterId, characterDeeds, qu
     // console.log(quoteList, '<-- IN QUOTE FETCH')
     // return quoteList;
 
+    console.log(currentCharacter.deeds[0].quoteId, '<-- PROPS IN CURRENT CHARACTER IN USE EFFECT')
+
+
   }, [])
 
   // async function getQuotes(characterObj) {
@@ -60,7 +65,7 @@ export function PoiDistribution({ characterName, characterId, characterDeeds, qu
 
   // console.log(currentCharacter.name, currentCharacter.id, currentCharacter.deeds, currentCharacter.deeds.quoteId[1], '<-- PROPS IN CURRENT CHARACTER')
 
-  console.log(currentCharacter.deeds[0].quoteId[1], '<-- PROPS IN CURRENT CHARACTER')
+  console.log(currentCharacter.deeds[0].quoteId, '<-- PROPS IN CURRENT CHARACTER')
 
   // let fetchedCharacter = fetchCharacter(currentCharacter.id)
 
@@ -79,7 +84,7 @@ export function PoiDistribution({ characterName, characterId, characterDeeds, qu
           return (
             <div key={idx} className={`poi-and-link-container ${entry.place}-poi-container`} onClick={() => {
               console.log('click worked.')
-              let poiBox = document.querySelector(`.${entry.place}`);
+              let poiBox = document.querySelector(`.${entry.place}-single-poi-container`);
               if (poiBox.classList.contains('poi-hidden')) {
                 poiBox.classList.remove('poi-hidden')
               } else {
