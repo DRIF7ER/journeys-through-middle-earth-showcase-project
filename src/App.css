@@ -5,16 +5,6 @@
   text-align: center;
 }
 
-/* .react-transform-wrapper {
-  width: 100vw;
-  height: auto;
-}
-
-.react-transform-component {
-  width: 100vw;
-  height: auto;
-} */
-
 .map-controls {
   position: fixed;
   z-index: 3;

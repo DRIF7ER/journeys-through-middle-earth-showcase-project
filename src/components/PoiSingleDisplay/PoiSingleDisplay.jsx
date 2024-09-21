@@ -5,8 +5,6 @@ export function PoiSingleDisplay(props) {
 
   const { place, deeds, poiImage, poiQuotes } = props;
 
-  console.log(poiQuotes, '<-- FROM SINGLE POI')
-
   return (
     <div className={ `single-poi-container ${ place }-single-poi-container poi-hidden` }>
       <div className='single-poi-inner-wrap'>
@@ -33,16 +31,6 @@ export function PoiSingleDisplay(props) {
             </div>
           </div>
         </div>
-        {/* <div className='single-display-controls'>
-          <button></button>
-          <button className='poi-close-btn' onClick={ () => {
-              console.log('click worked.')
-              let poiBox = document.querySelector(`.${ place }`);
-              (!poiBox.classList.contains('poi-hidden') ? poiBox.classList.add('poi-hidden') : null)
-            } 
-          }>CLOSE</button>
-          <button></button>
-        </div> */}
       </div>
     </div>
   )

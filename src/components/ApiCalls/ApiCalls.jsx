@@ -1,6 +1,6 @@
-import React from "react";
 /**
- 
+          INFO FROM THE ONE API. KEEP FOR FUTURE REFERENCE. 
+
 name: "The Fellowship Of The Ring"
   book id: "5cf5805fb53e011a64671582"
   movie id: "5cd95395de30eff6ebccde5c"
@@ -38,8 +38,7 @@ Aragorn:
 */
 
 export async function fetchCharacter(anId) {
-  console.log(anId, '<-- CHAR ID FROM FETCH CHAR')
-
+  
   let fetchCharacter = await fetch(`https://the-one-api.dev/v2/character/${ anId }`, {
     headers: {
       'Content-Type': 'application/json',
@@ -47,13 +46,10 @@ export async function fetchCharacter(anId) {
     }
   });
   let characterFetched = await fetchCharacter.json()
-  // let characterData = (await characterFetched).then((data) => data)
-  console.log(await characterFetched, '<-- FROM FETCH CHARACTERS')
   return characterFetched
 };
 
 export async function fetchCharacterQuotes(anId) {
-  console.log(anId, '<-- CHAR ID FROM FETCH QUOTES')
 
   let fetchQuotes = await fetch(`https://the-one-api.dev/v2/character/${ anId }/quote`, {
     headers: {
@@ -62,8 +58,6 @@ export async function fetchCharacterQuotes(anId) {
     }
   });
   let quotesFetched = await fetchQuotes.json()
-  // let quoteData = (await quotesFetched).then((data) => data)
-  console.log(quotesFetched, '<-- FROM FETCH QUOTES')
   return quotesFetched.docs
 };
 
