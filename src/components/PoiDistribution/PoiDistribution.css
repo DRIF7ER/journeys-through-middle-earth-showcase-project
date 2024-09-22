@@ -60,48 +60,27 @@
 
 .Bree-poi-container {
   top: 18.65vw;
-  right: 15.8vw;
+  right: 65.7vw;
 }
 
-
-/* .Bree-image-link {
-  top: 18.60vw;
-  right: 0vw;
-} */
-
-/* .Bree-image {
-  left: 0vw;
-} */
 
 .Weathertop-poi-container {
   top: 16.2vw;
-  right: 10vw;
+  right: 60vw;
 }
-
-/* .Weathertop-image-link {
-  top: 16.20vw;
-  left: 0vw;
-} */
 
 .Rivendell-poi-container {
   top: 19.4vw;
-  left: 97.3vw;
+  left: 47.3vw;
 }
-
-/* .Rivendell-image-link {
-  top: 19.4vw;
-  left: 0vw;
-} */
 
 @keyframes fadeSlideIn {
   0% {
-    /* stroke-dashoffset: 14942.033203125; */
     transform: translate(0%, 3%);
     opacity: 0;
   }
 
   100% {
-    /* stroke-dashoffset: 0; */
     transform: translate(0%, 0%);
     opacity: 1;
   }

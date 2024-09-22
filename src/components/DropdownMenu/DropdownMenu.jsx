@@ -1,11 +1,7 @@
 import './DropdownMenu.css'
-import React, { useState } from "react";
-import NavGuideItem from "../NavBarItem/NavBarItem.jsx";
-import Narsil from '../../assets/Icons/Narsil.svg';
-import Path from '../../assets/Icons/Path.svg';
+import React from "react";
 
 export function DropdownItem (props) {
-  console.log(props.characterId, props.name, '<-- FROM DROPDOWN ITEM')
 
   return (
     <div className='menu-item'>

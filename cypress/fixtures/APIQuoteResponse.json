@@ -1,0 +1,25 @@
+{
+  "docs": [
+    {
+      "character": "5cd99d4bde30eff6ebccfbe6",
+      "dialog": "A Freakin' Quote 1!!!",
+      "id": "5cd96e05de30eff6ebccf0db",
+      "movie": "5cd95395de30eff6ebccde5d",
+      "_id": "5cd96e05de30eff6ebccf0db"
+    },
+    {
+      "character": "5cd99d4bde30eff6ebccfbe6",
+      "dialog": "A Freakin' Quote 2!!!",
+      "id": "5cd96e05de30eff6ebccee85",
+      "movie": "5cd95395de30eff6ebccde5d",
+      "_id": "5cd96e05de30eff6ebccee85"
+    },
+    {
+      "character": "5cd99d4bde30eff6ebccfbe6",
+      "dialog": "A Freakin' Quote 3!!!",
+      "id": "5cd96e05de30eff6ebcceee2",
+      "movie": "5cd95395de30eff6ebccde5d",
+      "_id": "5cd96e05de30eff6ebcceee2"
+    }
+  ]
+}
