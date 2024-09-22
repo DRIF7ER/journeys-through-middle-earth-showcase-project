@@ -1,4 +1,4 @@
-import './paths.css';
+import './Paths.css';
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import PoiDistribution from '../PoiDistribution/PoiDistribution.jsx';
